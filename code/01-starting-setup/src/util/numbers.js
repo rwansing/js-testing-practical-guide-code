@@ -3,3 +3,10 @@ export function transformToNumber(value) {
   return +value;
 }
 
+export function cleanNumbers(numberInputs) {
+  const numbers = [];
+  for (const num of numberInputs) {
+    numbers.push(+num);
+  }
+  return numbers;
+}
